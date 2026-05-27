@@ -1,6 +1,6 @@
 # Olá, sou Renan Toyoyama 👋
 
-**Engenheiro de Dados · Cientista de Dados · Analista de Dados**
+**Engenheiro de Dados · Cientista de Dados**
 
 ---
 
