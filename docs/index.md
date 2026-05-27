@@ -5,14 +5,60 @@
 ---
 
 !!! quote "Sobre mim"
-    Profissional especializado em transformar dados em insights estratégicos,
-    com base acadêmica em Economia e Sistemas de Informação (UFRRJ), complementada
-    por **6 anos de experiência internacional no Japão**. Atualmente cursando
-    Análise e Desenvolvimento de Sistemas (Unicesumar) e Especialização em
-    Ciência de Dados (EBAC).
+    Engenheiro e Cientista de Dados com experiência end-to-end — de pipelines
+    ETL/ELT à modelagem preditiva — atuando em ambientes Big Data com Spark,
+    Hadoop, Hive e Databricks. Projetei e entreguei soluções de dados críticas
+    em produção na **Secretaria da Fazenda do Estado do Pará (SEFA)**, incluindo
+    arquiteturas dbt em camadas para análise de risco fiscal e pacotes Python
+    internos para integração entre sistemas corporativos.
 
-Atuo em todo o ciclo de dados: da ingestão e orquestração de pipelines até
-modelagem preditiva e visualização de resultados.
+    Combino domínio técnico em Python, Airflow, DBT, Oracle e CI/CD com visão
+    analítica para transformar dados em valor real para o negócio.
+
+---
+
+## 🏢 Experiência Profissional
+
+=== "SEFA · FADESP (2025 – Presente)"
+    **Engenheiro de Dados / Cientista de Dados**
+    *Secretaria da Fazenda do Estado do Pará*
+
+    - Construção de pipelines de análise de **risco fiscal** para identificação
+      de contribuintes irregulares com base em vínculos societários
+    - Desenvolvimento de pacotes Python internos com Poetry, uv e Docker,
+      publicados via **GitLab CI/CD**
+    - Orquestração de pipelines com **Apache Airflow** e **Apache Oozie**,
+      com monitoramento de falhas e reprocessamento controlado
+    - Modelos de **Machine Learning** supervisionados e não supervisionados
+      com Scikit-learn, aplicados à classificação de risco fiscal
+    - Atuação em metodologia ágil (**Scrum/Kanban**) com gestão no Jira
+
+=== "Paraferro LTDA (2024 – 2025)"
+    **Analista de Processos**
+
+    - Identificação de gargalos no estoque, produção e logística
+    - Criação e padronização de procedimentos operacionais
+    - Acompanhamento de KPIs: prazo de entrega, produtividade e estoque
+    - Implementação de sistemas de automação de processos
+
+=== "RS Net (2023 – 2024)"
+    **Técnico de Redes**
+
+    - Instalação e manutenção de redes de fibra óptica
+    - Configuração de roteadores, ONUs e equipamentos de rede
+
+=== "PROEXT-UFRRJ (2017)"
+    **Analista de Sistemas Júnior**
+
+    - Desenvolvimento do sistema automatizado da PROEXT (Sisproxt)
+    - Treinamento de funcionários públicos no uso da ferramenta
+
+=== "PET-SI · UFRRJ (2014 – 2017)"
+    **Estagiário — Programa de Ensino Tutorial de Sistemas de Informação**
+
+    - Tutoria acadêmica em disciplinas do curso de Sistemas de Informação
+    - Participação em criação de sistemas, sites e artigos científicos
+    - Apresentações em congressos acadêmicos e profissionais
 
 ---
 
@@ -82,22 +128,25 @@ modelagem preditiva e visualização de resultados.
 
 === "Engenharia de Dados"
     `Apache Airflow` · `Apache Spark` · `DBT` · `Hadoop / HDFS`
-    · `Hive` · `HBase` · `Oozie` · `Docker` · `GitHub Actions`
+    · `Hive` · `HBase` · `Impala` · `Oozie` · `Docker` · `GitLab CI/CD`
 
 === "Ciência de Dados"
     `Scikit-learn` · `TensorFlow` · `Pandas` · `NumPy`
     · `Statsmodels` · `Matplotlib` · `Seaborn`
 
 === "Bancos de Dados"
-    `PostgreSQL` · `Oracle Database` · `SQLAlchemy` · `Databricks`
+    `PostgreSQL` · `Oracle Database` · `SQLAlchemy` · `Databricks` · `Impala`
 
 === "Linguagens & Ferramentas"
-    `Python 3.13` · `Java` · `SQL` · `Git` · `uv` · `Poetry`
-    · `Ruff` · `Pytest`
+    `Python 3.13` · `SQL` · `Shell Script` · `Java` · `Git`
+    · `uv` · `Poetry` · `Ruff` · `Pytest`
 
 ---
 
 ## 📫 Contato
+
+Atualmente atuando como Engenheiro de Dados na Secretaria da Fazenda
+do Estado do Pará (SEFA).
 
 [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/renan-toyoyama-3b0165308/){ .md-button .md-button--primary }
 [:fontawesome-brands-github: GitHub](https://github.com/RToyoyama){ .md-button }
