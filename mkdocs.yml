@@ -37,7 +37,6 @@ theme:
     - navigation.tabs        # menu em abas no topo
     - navigation.indexes     # cada seção pode ter sua própria index
     - navigation.top         # botão "voltar ao topo"
-    - navigation.instant     # navegação sem recarregar a página
     - content.code.copy      # botão de copiar em blocos de código
     - search.highlight       # destaca o termo pesquisado
     - search.suggest         # autocomplete na busca
@@ -64,7 +63,51 @@ nav:
 # ─────────────────────────────────────────────
 plugins:
   - search:
-      lang: pt
+      lang:
+        - pt
+        - en
+        - ja
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: pt
+          name: Português
+          default: true
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            Início: Home
+            Projetos: Projects
+            Skills: Skills
+            Contato: Contact
+            Currency ETL Pipeline: Currency ETL Pipeline
+            Torre de Hanói: Tower of Hanoi
+            EduConnect SGE: EduConnect SGE
+            Árvore de Decisão: Decision Tree
+            Credit Score Naive Bayes: Credit Score Naive Bayes
+            Análise de Vendas: Sales Analysis
+            Regressão Imobiliária: Real Estate Regression
+
+        - locale: ja
+          name: 日本語
+          build: true
+          nav_translations:
+            Início: ホーム
+            Projetos: プロジェクト
+            Skills: スキル
+            Contato: お問い合わせ
+            Currency ETL Pipeline: 通貨ETLパイプライン
+            Torre de Hanói: ハノイの塔
+            EduConnect SGE: EduConnect SGE
+            Árvore de Decisão: 決定木による分類
+            Credit Score Naive Bayes: 信用スコア
+            Análise de Vendas: 売上分析
+            Regressão Imobiliária: 不動産回帰分析
 
 # ─────────────────────────────────────────────
 # EXTENSÕES DO MARKDOWN
