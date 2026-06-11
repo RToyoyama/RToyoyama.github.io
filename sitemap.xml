@@ -1,47 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://RToyoyama.github.io/</loc>
-         <lastmod>2026-05-27</lastmod>
+        <loc>https://RToyoyama.github.io/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/"/>
     </url>
     <url>
-         <loc>https://RToyoyama.github.io/contato/</loc>
-         <lastmod>2026-05-27</lastmod>
+        <loc>https://RToyoyama.github.io/contato/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/contato/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/contato/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/contato/"/>
     </url>
     <url>
-         <loc>https://RToyoyama.github.io/skills/</loc>
-         <lastmod>2026-05-27</lastmod>
+        <loc>https://RToyoyama.github.io/skills/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/skills/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/skills/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/skills/"/>
     </url>
     <url>
-         <loc>https://RToyoyama.github.io/projetos/</loc>
-         <lastmod>2026-05-27</lastmod>
+        <loc>https://RToyoyama.github.io/projetos/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/"/>
     </url>
     <url>
-         <loc>https://RToyoyama.github.io/projetos/arvore-decisao/</loc>
-         <lastmod>2026-05-27</lastmod>
+        <loc>https://RToyoyama.github.io/projetos/arvore-decisao/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/arvore-decisao/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/arvore-decisao/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/arvore-decisao/"/>
     </url>
     <url>
-         <loc>https://RToyoyama.github.io/projetos/credit-score-naivebayes/</loc>
-         <lastmod>2026-05-27</lastmod>
+        <loc>https://RToyoyama.github.io/projetos/credit-score-naivebayes/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/credit-score-naivebayes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/credit-score-naivebayes/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/credit-score-naivebayes/"/>
     </url>
     <url>
-         <loc>https://RToyoyama.github.io/projetos/currency-etl-pipeline/</loc>
-         <lastmod>2026-05-27</lastmod>
+        <loc>https://RToyoyama.github.io/projetos/currency-etl-pipeline/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/currency-etl-pipeline/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/currency-etl-pipeline/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/currency-etl-pipeline/"/>
     </url>
     <url>
-         <loc>https://RToyoyama.github.io/projetos/educonnect-sge/</loc>
-         <lastmod>2026-05-27</lastmod>
+        <loc>https://RToyoyama.github.io/projetos/educonnect-sge/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/educonnect-sge/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/educonnect-sge/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/educonnect-sge/"/>
     </url>
     <url>
-         <loc>https://RToyoyama.github.io/projetos/regressao-imobiliaria/</loc>
-         <lastmod>2026-05-27</lastmod>
+        <loc>https://RToyoyama.github.io/projetos/regressao-imobiliaria/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/regressao-imobiliaria/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/regressao-imobiliaria/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/regressao-imobiliaria/"/>
     </url>
     <url>
-         <loc>https://RToyoyama.github.io/projetos/supermarket-sales/</loc>
-         <lastmod>2026-05-27</lastmod>
+        <loc>https://RToyoyama.github.io/projetos/supermarket-sales/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/supermarket-sales/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/supermarket-sales/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/supermarket-sales/"/>
     </url>
     <url>
-         <loc>https://RToyoyama.github.io/projetos/torre-hanoi/</loc>
-         <lastmod>2026-05-27</lastmod>
+        <loc>https://RToyoyama.github.io/projetos/torre-hanoi/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/torre-hanoi/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/torre-hanoi/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/torre-hanoi/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/en/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/en/contato/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/contato/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/contato/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/contato/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/en/skills/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/skills/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/skills/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/skills/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/en/projetos/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/en/projetos/arvore-decisao/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/arvore-decisao/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/arvore-decisao/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/arvore-decisao/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/en/projetos/credit-score-naivebayes/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/credit-score-naivebayes/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/credit-score-naivebayes/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/credit-score-naivebayes/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/en/projetos/currency-etl-pipeline/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/currency-etl-pipeline/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/currency-etl-pipeline/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/currency-etl-pipeline/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/en/projetos/educonnect-sge/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/educonnect-sge/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/educonnect-sge/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/educonnect-sge/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/en/projetos/regressao-imobiliaria/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/regressao-imobiliaria/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/regressao-imobiliaria/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/regressao-imobiliaria/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/en/projetos/supermarket-sales/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/supermarket-sales/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/supermarket-sales/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/supermarket-sales/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/en/projetos/torre-hanoi/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/torre-hanoi/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/torre-hanoi/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/torre-hanoi/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/ja/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/ja/contato/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/contato/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/contato/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/contato/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/ja/skills/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/skills/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/skills/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/skills/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/ja/projetos/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/ja/projetos/arvore-decisao/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/arvore-decisao/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/arvore-decisao/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/arvore-decisao/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/ja/projetos/credit-score-naivebayes/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/credit-score-naivebayes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/credit-score-naivebayes/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/credit-score-naivebayes/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/ja/projetos/currency-etl-pipeline/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/currency-etl-pipeline/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/currency-etl-pipeline/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/currency-etl-pipeline/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/ja/projetos/educonnect-sge/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/educonnect-sge/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/educonnect-sge/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/educonnect-sge/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/ja/projetos/regressao-imobiliaria/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/regressao-imobiliaria/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/regressao-imobiliaria/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/regressao-imobiliaria/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/ja/projetos/supermarket-sales/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/supermarket-sales/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/supermarket-sales/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/supermarket-sales/"/>
+    </url>
+    <url>
+        <loc>https://RToyoyama.github.io/ja/projetos/torre-hanoi/</loc>
+        <lastmod>2026-06-11</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://RToyoyama.github.io/ja/projetos/torre-hanoi/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RToyoyama.github.io/en/projetos/torre-hanoi/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://RToyoyama.github.io/projetos/torre-hanoi/"/>
     </url>
 </urlset>
