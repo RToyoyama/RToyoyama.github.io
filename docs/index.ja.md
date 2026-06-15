@@ -105,6 +105,15 @@
 
     `Python` `Pandas` `Seaborn`
 
+-   :material-shopping: **[Eコマースダッシュボード](projetos/ecommerce-dashboard.md)**
+
+    ---
+
+    INNER JOIN SQLパイプライン + 自己完結型HTMLダッシュボード。
+    性別・州・カテゴリのフィルター付き7種類のインタラクティブ可視化。
+
+    `Python` `Pandas` `SQLite` `Chart.js`
+
 -   :material-school: **[EduConnect SGE](projetos/educonnect-sge.md)**
 
     ---

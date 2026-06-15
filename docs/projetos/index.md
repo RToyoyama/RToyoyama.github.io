@@ -68,6 +68,21 @@ diagnóstico de overfitting.
 
 ## Ciência de Dados — Análise Exploratória
 
+### [Dashboard de E-commerce](ecommerce-dashboard.md)
+
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-4.4.0-FF6384?logo=chartdotjs&logoColor=white)
+
+Pipeline SQL que consolida transações e clientes de e-commerce via INNER JOIN,
+exporta o dataset consolidado (296 registros) e o exibe em dashboard HTML
+autocontido com 7 visualizações e filtros interativos por gênero, estado e categoria.
+
+[:octicons-arrow-right-24: Ver projeto](ecommerce-dashboard.md)
+
+---
+
 ### [Análise de Vendas de Supermercado](supermarket-sales.md)
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)

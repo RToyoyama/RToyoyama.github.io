@@ -111,6 +111,15 @@
 
     `Python` `Pandas` `Seaborn`
 
+-   :material-shopping: **[E-commerce Dashboard](projetos/ecommerce-dashboard.md)**
+
+    ---
+
+    SQL pipeline with INNER JOIN + self-contained HTML dashboard.
+    7 interactive visualizations with filters by gender, state and category.
+
+    `Python` `Pandas` `SQLite` `Chart.js`
+
 -   :material-school: **[EduConnect SGE](projetos/educonnect-sge.md)**
 
     ---

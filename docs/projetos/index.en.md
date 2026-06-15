@@ -68,6 +68,21 @@ overfitting diagnosis.
 
 ## Data Science — Exploratory Analysis
 
+### [E-commerce Dashboard](ecommerce-dashboard.md)
+
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-4.4.0-FF6384?logo=chartdotjs&logoColor=white)
+
+SQL pipeline that consolidates e-commerce transactions and customers via INNER JOIN,
+exports the consolidated dataset (296 records) and displays it in a self-contained HTML
+dashboard with 7 visualizations and interactive filters by gender, state and category.
+
+[:octicons-arrow-right-24: View project](ecommerce-dashboard.md)
+
+---
+
 ### [Supermarket Sales Analysis](supermarket-sales.md)
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)

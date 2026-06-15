@@ -65,6 +65,21 @@ DockerでコンテナKA化、GitHub ActionsでCI/CD。
 
 ## データサイエンス — 探索的分析
 
+### [Eコマースダッシュボード](ecommerce-dashboard.md)
+
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
+![Chart.js](https://img.shields.io/badge/Chart.js-4.4.0-FF6384?logo=chartdotjs&logoColor=white)
+
+INNER JOINでEコマースのトランザクションと顧客を統合するSQLパイプライン。
+統合データセット（296件）をエクスポートし、性別・州・カテゴリのフィルター付き
+7種類の可視化を持つ自己完結型HTMLダッシュボードで表示。
+
+[:octicons-arrow-right-24: プロジェクトを見る](ecommerce-dashboard.md)
+
+---
+
 ### [スーパーマーケット売上分析](supermarket-sales.md)
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
