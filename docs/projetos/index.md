@@ -66,6 +66,21 @@ diagnóstico de overfitting.
 
 ---
 
+### [Segmentação de Clientes com K-Means](segmentacao-clientes-kmeans.md)
+
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+Clustering não supervisionado de 200 clientes de shopping por renda, idade e
+*Spending Score*. Escolha de k validada por cotovelo, silhueta, Davies-Bouldin e
+Calinski-Harabasz, resultando em 5 segmentos (silhueta 0,555) com estratégias de
+negócio para cada um. Ambiente reproduzível com uv e Docker.
+
+[:octicons-arrow-right-24: Ver projeto](segmentacao-clientes-kmeans.md)
+
+---
+
 ## Ciência de Dados — Análise Exploratória
 
 ### [Dashboard de E-commerce](ecommerce-dashboard.md)

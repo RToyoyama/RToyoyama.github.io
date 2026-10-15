@@ -96,6 +96,15 @@
 
     `Python` `Scikit-learn` `Statsmodels`
 
+-   :material-account-group: **[K-Means顧客セグメンテーション](projetos/segmentacao-clientes-kmeans.md)**
+
+    ---
+
+    顧客200人を教師なしクラスタリングで5つのセグメントに分類
+    （シルエット 0.555）し、グループごとのマーケティング戦略を提案。
+
+    `Python` `Scikit-learn` `Pandas` `Docker`
+
 -   :material-chart-bar: **[スーパーマーケット売上分析](projetos/supermarket-sales.md)**
 
     ---

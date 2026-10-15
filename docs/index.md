@@ -102,6 +102,15 @@
 
     `Python` `Scikit-learn` `Statsmodels`
 
+-   :material-account-group: **[Segmentação de Clientes — K-Means](projetos/segmentacao-clientes-kmeans.md)**
+
+    ---
+
+    Clustering não supervisionado de 200 clientes em 5 segmentos
+    (silhueta 0,555) com estratégias de marketing por grupo.
+
+    `Python` `Scikit-learn` `Pandas` `Docker`
+
 -   :material-chart-bar: **[Análise de Vendas](projetos/supermarket-sales.md)**
 
     ---

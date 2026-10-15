@@ -66,6 +66,21 @@ overfitting diagnosis.
 
 ---
 
+### [Customer Segmentation with K-Means](segmentacao-clientes-kmeans.md)
+
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+Unsupervised clustering of 200 mall customers by income, age and *Spending Score*.
+Choice of k validated by elbow, silhouette, Davies-Bouldin and Calinski-Harabasz,
+resulting in 5 segments (silhouette 0.555) with business strategies for each one.
+Reproducible environment with uv and Docker.
+
+[:octicons-arrow-right-24: View project](segmentacao-clientes-kmeans.md)
+
+---
+
 ## Data Science — Exploratory Analysis
 
 ### [E-commerce Dashboard](ecommerce-dashboard.md)

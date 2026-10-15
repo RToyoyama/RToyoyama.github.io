@@ -63,6 +63,21 @@ DockerでコンテナKA化、GitHub ActionsでCI/CD。
 
 ---
 
+### [K-Meansによる顧客セグメンテーション](segmentacao-clientes-kmeans.md)
+
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+ショッピングモールの顧客200人を年収・年齢・*Spending Score* で教師なしクラスタリング。
+エルボー法、シルエット、Davies-Bouldin、Calinski-Harabaszでkを検証し、
+5つのセグメント（シルエット 0.555）とそれぞれのビジネス戦略を導出。
+uvとDockerによる再現可能な環境。
+
+[:octicons-arrow-right-24: プロジェクトを見る](segmentacao-clientes-kmeans.md)
+
+---
+
 ## データサイエンス — 探索的分析
 
 ### [Eコマースダッシュボード](ecommerce-dashboard.md)

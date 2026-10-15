@@ -55,6 +55,7 @@ nav:
     - Credit Score Naive Bayes: projetos/credit-score-naivebayes.md
     - Análise de Vendas: projetos/supermarket-sales.md
     - Regressão Imobiliária: projetos/regressao-imobiliaria.md
+    - Segmentação K-Means: projetos/segmentacao-clientes-kmeans.md
     - Dashboard E-commerce: projetos/ecommerce-dashboard.md
   - Skills: skills.md
   - Contato: contato.md
@@ -93,6 +94,7 @@ plugins:
             Credit Score Naive Bayes: Credit Score Naive Bayes
             Análise de Vendas: Sales Analysis
             Regressão Imobiliária: Real Estate Regression
+            Segmentação K-Means: K-Means Segmentation
             Dashboard E-commerce: E-commerce Dashboard
 
         - locale: ja
@@ -110,6 +112,7 @@ plugins:
             Credit Score Naive Bayes: 信用スコア
             Análise de Vendas: 売上分析
             Regressão Imobiliária: 不動産回帰分析
+            Segmentação K-Means: K-Means顧客セグメンテーション
             Dashboard E-commerce: Eコマースダッシュボード
 
 # ─────────────────────────────────────────────
