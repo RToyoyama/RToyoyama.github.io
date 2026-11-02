@@ -81,6 +81,22 @@ Reproducible environment with uv and Docker.
 
 ---
 
+### [Titanic — Final Model Duel](titanic-duelo-final.md)
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+A solution to Kaggle's Titanic competition built as an engineering project:
+leak-free pipelines, a leave-one-out group survival feature, 5×3 validation with
+paired comparison, tuning and ensembles. Hard voting with CV 0.8503 and 0.77751
+on Kaggle, 65 tests and a reproducible Docker environment.
+
+[:octicons-arrow-right-24: View project](titanic-duelo-final.md)
+
+---
+
 ## Data Science — Exploratory Analysis
 
 ### [E-commerce Dashboard](ecommerce-dashboard.md)

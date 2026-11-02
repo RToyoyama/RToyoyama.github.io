@@ -111,6 +111,15 @@
 
     `Python` `Scikit-learn` `Pandas` `Docker`
 
+-   :material-ferry: **[Titanic — Duelo Final de Modelos](projetos/titanic-duelo-final.md)**
+
+    ---
+
+    Votação hard com pipelines sem vazamento e feature de sobrevivência
+    do grupo. CV 0.8503 e 0.77751 no Kaggle, com 65 testes e Docker.
+
+    `Python` `Scikit-learn` `XGBoost` `Docker`
+
 -   :material-chart-bar: **[Análise de Vendas](projetos/supermarket-sales.md)**
 
     ---

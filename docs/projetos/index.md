@@ -81,6 +81,22 @@ negócio para cada um. Ambiente reproduzível com uv e Docker.
 
 ---
 
+### [Titanic — Duelo Final de Modelos](titanic-duelo-final.md)
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+Solução para a competição Titanic do Kaggle construída como projeto de engenharia:
+pipelines sem vazamento, feature de sobrevivência do grupo com leave-one-out,
+validação 5×3 com comparação pareada, tuning e ensembles. Votação hard com
+CV 0.8503 e 0.77751 no Kaggle, 65 testes e ambiente Docker reproduzível.
+
+[:octicons-arrow-right-24: Ver projeto](titanic-duelo-final.md)
+
+---
+
 ## Ciência de Dados — Análise Exploratória
 
 ### [Dashboard de E-commerce](ecommerce-dashboard.md)

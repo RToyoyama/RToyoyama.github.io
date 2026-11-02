@@ -105,6 +105,15 @@
 
     `Python` `Scikit-learn` `Pandas` `Docker`
 
+-   :material-ferry: **[タイタニック — モデル最終決戦](projetos/titanic-duelo-final.md)**
+
+    ---
+
+    リークのないパイプラインとグループ生存特徴量によるハード投票。
+    CV 0.8503、Kaggle 0.77751。65件のテストとDocker。
+
+    `Python` `Scikit-learn` `XGBoost` `Docker`
+
 -   :material-chart-bar: **[スーパーマーケット売上分析](projetos/supermarket-sales.md)**
 
     ---

@@ -78,6 +78,22 @@ uvとDockerによる再現可能な環境。
 
 ---
 
+### [タイタニック — モデル最終決戦](titanic-duelo-final.md)
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+Kaggleのタイタニックコンペをエンジニアリングプロジェクトとして構築：
+リークのないパイプライン、leave-one-outによるグループ生存特徴量、
+対応比較付きの5×3検証、チューニングとアンサンブル。ハード投票でCV 0.8503、
+Kaggle 0.77751。65件のテストと再現可能なDocker環境。
+
+[:octicons-arrow-right-24: プロジェクトを見る](titanic-duelo-final.md)
+
+---
+
 ## データサイエンス — 探索的分析
 
 ### [Eコマースダッシュボード](ecommerce-dashboard.md)
