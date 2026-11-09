@@ -57,6 +57,7 @@ nav:
     - Regressão Imobiliária: projetos/regressao-imobiliaria.md
     - Segmentação K-Means: projetos/segmentacao-clientes-kmeans.md
     - Titanic — Duelo Final: projetos/titanic-duelo-final.md
+    - Risco de Crédito — Semantix: projetos/credit-risk-semantix.md
     - Dashboard E-commerce: projetos/ecommerce-dashboard.md
   - Skills: skills.md
   - Contato: contato.md
@@ -97,6 +98,7 @@ plugins:
             Regressão Imobiliária: Real Estate Regression
             Segmentação K-Means: K-Means Segmentation
             Titanic — Duelo Final: Titanic — Final Model Duel
+            Risco de Crédito — Semantix: Credit Risk — Semantix
             Dashboard E-commerce: E-commerce Dashboard
 
         - locale: ja
@@ -116,6 +118,7 @@ plugins:
             Regressão Imobiliária: 不動産回帰分析
             Segmentação K-Means: K-Means顧客セグメンテーション
             Titanic — Duelo Final: タイタニック — モデル最終決戦
+            Risco de Crédito — Semantix: 信用リスク — Semantix
             Dashboard E-commerce: Eコマースダッシュボード
 
 # ─────────────────────────────────────────────
@@ -124,7 +127,11 @@ plugins:
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true   # links para linhas específicas de código
-  - pymdownx.superfences      # blocos de código aninhados
+  - pymdownx.superfences:     # blocos de código aninhados + diagramas Mermaid
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.inlinehilite     # highlight inline: `#!python print()`
   - pymdownx.tabbed:
       alternate_style: true   # abas horizontais no conteúdo

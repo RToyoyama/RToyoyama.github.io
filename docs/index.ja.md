@@ -105,6 +105,15 @@
 
     `Python` `Scikit-learn` `Pandas` `Docker`
 
+-   :material-credit-card-check: **[コスト重視の信用リスク](projetos/credit-risk-semantix.md)**
+
+    ---
+
+    期待損失に基づく与信ポリシー（EBAC × Semantix）。ホールドアウトで延滞ルール比
+    +NT$ 236万（+46%）。API、ダッシュボード、215件のテスト。
+
+    `Python` `XGBoost` `FastAPI` `Streamlit` `Docker`
+
 -   :material-ferry: **[タイタニック — モデル最終決戦](projetos/titanic-duelo-final.md)**
 
     ---

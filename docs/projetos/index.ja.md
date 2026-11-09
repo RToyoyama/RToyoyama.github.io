@@ -78,6 +78,23 @@ uvとDockerによる再現可能な環境。
 
 ---
 
+### [コスト重視の信用リスク](credit-risk-semantix.md)
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+EBAC × Semantix の提携プロジェクト：毎月、デフォルト前にどのカード顧客へ対応するかを
+期待損失（PD × LGD × EAD）で判断。封印されたホールドアウトで延滞ルール比
++NT$ 236万（+46%）。0〜1000のスコア、A〜E区分、SHAPによる理由、PSIモニタリング、
+FastAPI、Streamlitダッシュボード、215件のテスト。
+
+[:octicons-arrow-right-24: プロジェクトを見る](credit-risk-semantix.md)
+
+---
+
 ### [タイタニック — モデル最終決戦](titanic-duelo-final.md)
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)

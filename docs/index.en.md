@@ -111,6 +111,15 @@
 
     `Python` `Scikit-learn` `Pandas` `Docker`
 
+-   :material-credit-card-check: **[Cost-Driven Credit Risk](projetos/credit-risk-semantix.md)**
+
+    ---
+
+    Expected-loss credit policy (EBAC × Semantix): +NT$ 2.36M (+46%) over
+    the delinquency rule on the holdout, with API, dashboard and 215 tests.
+
+    `Python` `XGBoost` `FastAPI` `Streamlit` `Docker`
+
 -   :material-ferry: **[Titanic — Final Model Duel](projetos/titanic-duelo-final.md)**
 
     ---

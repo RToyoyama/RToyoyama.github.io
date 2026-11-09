@@ -81,6 +81,23 @@ Reproducible environment with uv and Docker.
 
 ---
 
+### [Cost-Driven Credit Risk](credit-risk-semantix.md)
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+An EBAC × Semantix partnership project: deciding each month which card customers
+to act on before default, ranked by expected loss (PD × LGD × EAD). On the sealed
+holdout, +NT$ 2.36M (+46%) over the delinquency rule. 0–1000 score, A–E bands,
+SHAP reason codes, PSI monitoring, FastAPI service, Streamlit dashboard and 215 tests.
+
+[:octicons-arrow-right-24: View project](credit-risk-semantix.md)
+
+---
+
 ### [Titanic — Final Model Duel](titanic-duelo-final.md)
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)

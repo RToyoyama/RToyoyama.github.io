@@ -81,6 +81,23 @@ negócio para cada um. Ambiente reproduzível com uv e Docker.
 
 ---
 
+### [Risco de Crédito Orientado a Custo](credit-risk-semantix.md)
+
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+Projeto de parceria EBAC × Semantix: decidir todo mês em quais clientes de cartão
+agir antes do calote, escolhendo pela perda esperada (PD × LGD × EAD). No holdout
+lacrado, +NT$ 2,36 mi (+46%) sobre a regra de atraso. Score 0–1000, faixas A–E,
+motivos via SHAP, monitoramento com PSI, API FastAPI, dashboard Streamlit e 215 testes.
+
+[:octicons-arrow-right-24: Ver projeto](credit-risk-semantix.md)
+
+---
+
 ### [Titanic — Duelo Final de Modelos](titanic-duelo-final.md)
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
