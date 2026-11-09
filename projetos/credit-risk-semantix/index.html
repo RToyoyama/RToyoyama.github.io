@@ -1,0 +1,1468 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Portfólio de projetos de Engenharia e Ciência de Dados">
+      
+      
+        <meta name="author" content="Renan Toyoyama">
+      
+      
+        <link rel="canonical" href="https://RToyoyama.github.io/projetos/credit-risk-semantix/">
+      
+      
+        <link rel="prev" href="../titanic-duelo-final/">
+      
+      
+        <link rel="next" href="../ecommerce-dashboard/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>Risco de Crédito — Semantix - Renan Toyoyama | Data Portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"IBM Plex Sans";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#risco-de-credito-orientado-a-custo" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Renan Toyoyama | Data Portfolio" class="md-header__button md-logo" aria-label="Renan Toyoyama | Data Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Renan Toyoyama | Data Portfolio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Risco de Crédito — Semantix
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="cyan"  aria-label="Modo escuro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo escuro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Selecione o idioma">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="pt" class="md-select__link">
+              Português
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../en/projetos/credit-risk-semantix/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../ja/projetos/credit-risk-semantix/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/RToyoyama/RToyoyama.github.io" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RToyoyama/RToyoyama.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+    
+  
+  Projetos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../skills/" class="md-tabs__link">
+        
+  
+    
+  
+  Skills
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contato/" class="md-tabs__link">
+        
+  
+    
+  
+  Contato
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Renan Toyoyama | Data Portfolio" class="md-nav__button md-logo" aria-label="Renan Toyoyama | Data Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Renan Toyoyama | Data Portfolio
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/RToyoyama/RToyoyama.github.io" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    RToyoyama/RToyoyama.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Início
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Projetos
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Projetos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../currency-etl-pipeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Currency ETL Pipeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../torre-hanoi/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Torre de Hanói
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../educonnect-sge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EduConnect SGE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arvore-decisao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Árvore de Decisão
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../credit-score-naivebayes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Credit Score Naive Bayes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../supermarket-sales/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Análise de Vendas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regressao-imobiliaria/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regressão Imobiliária
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../segmentacao-clientes-kmeans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Segmentação K-Means
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../titanic-duelo-final/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Titanic — Duelo Final
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Risco de Crédito — Semantix
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Risco de Crédito — Semantix
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitetura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitetura
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#os-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Os Dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stack-utilizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack Utilizada
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resultados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prova-final-holdout-6000-clientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prova final (holdout, 6.000 clientes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faixas-de-risco-holdout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Faixas de risco (holdout)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o-que-nao-funcionou-e-virou-aprendizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que não funcionou (e virou aprendizado)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-executar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como Executar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como Executar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-chamando-a-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo: chamando a API
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ecommerce-dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dashboard E-commerce
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skills/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Skills
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contato/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contato
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitetura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitetura
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#os-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Os Dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stack-utilizada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stack Utilizada
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resultados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prova-final-holdout-6000-clientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prova final (holdout, 6.000 clientes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faixas-de-risco-holdout" class="md-nav__link">
+    <span class="md-ellipsis">
+      Faixas de risco (holdout)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#o-que-nao-funcionou-e-virou-aprendizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que não funcionou (e virou aprendizado)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-executar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como Executar
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Como Executar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-chamando-a-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo: chamando a API
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="risco-de-credito-orientado-a-custo">Risco de Crédito Orientado a Custo</h1>
+<p><img alt="Python" src="https://img.shields.io/badge/Python-3.11-blue?logo=python&amp;logoColor=white" />
+<img alt="Scikit-learn" src="https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikitlearn&amp;logoColor=white" />
+<img alt="XGBoost" src="https://img.shields.io/badge/XGBoost-189FDD?logoColor=white" />
+<img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&amp;logoColor=white" />
+<img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&amp;logoColor=white" />
+<img alt="Pytest" src="https://img.shields.io/badge/Pytest-215%20testes-0A9EDC?logo=pytest&amp;logoColor=white" />
+<img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?logo=docker&amp;logoColor=white" /></p>
+<p><a class="md-button md-button--primary" href="https://github.com/RToyoyama/credit-risk-semantix"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span> Repositório</a>
+<a class="md-button" href="https://credit-risk-semantix-vsjmawoelrtyrwzz49nnaa.streamlit.app/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16V4H3v12h18m0-14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-7v2h2v2H8v-2h2v-2H3a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2h18M5 6h9v5H5V6m10 0h4v2h-4V6m4 3v5h-4V9h4M5 12h4v2H5v-2m5 0h4v2h-4v-2Z"/></svg></span> Dashboard online</a></p>
+<hr />
+<h2 id="visao-geral">Visão Geral</h2>
+<p>Projeto de parceria <strong>EBAC × Semantix</strong>. Um sistema que ajuda uma emissora de
+cartão de crédito a decidir, todo mês, <strong>em quais clientes agir antes que eles
+deixem de pagar</strong>, escolhendo pelo <strong>dinheiro em jogo</strong>, e não pela taxa de acerto.</p>
+<p>22% dos clientes da base deixam de pagar a fatura seguinte, e a equipe só consegue
+atender <strong>10% da carteira por mês</strong>. A pergunta é: <strong>quais 10%?</strong></p>
+<p>Resultado na prova final lacrada (<strong>6.000 clientes que o modelo nunca viu</strong>, usada uma única vez):</p>
+<table>
+<thead>
+<tr>
+<th>Quem acionar (600 clientes)</th>
+<th>Valor líquido (perda evitada − custos)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ninguém</td>
+<td>NT$ 0 (a perda de NT$ 40,4 mi segue inteira)</td>
+</tr>
+<tr>
+<td>Regra de atraso (os mais atrasados primeiro, sem modelo)</td>
+<td>NT$ 5,17 mi</td>
+</tr>
+<tr>
+<td><strong>Os de maior valor esperado (modelo)</strong></td>
+<td><strong>NT$ 7,52 mi</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>+NT$ 2,36 milhões (+46%) a mais que a regra de atraso</strong> (IC 95%: +1,59 a +3,15 mi).
+No treino, o modelo vence a regra em <strong>12 de 12</strong> cenários de premissas de negócio.</p>
+<div class="admonition success">
+<p class="admonition-title">Destaques</p>
+<ul>
+<li><strong>Decisão por custo, não por acurácia:</strong> perda esperada por cliente (PD × LGD × EAD) define quem acionar. Escolher só pela probabilidade de calote <strong>empata com a regra de atraso</strong>; o ganho vem de combinar a probabilidade com quanto o cliente deve</li>
+<li><strong>Holdout lacrado de verdade:</strong> 20% separados no primeiro dia e avaliados uma única vez — a CV previu o holdout (PR AUC 0,566 → 0,560)</li>
+<li><strong>Política completa:</strong> score 0–1000, faixas A–E monotônicas (6% → 71% de calote), motivos de cada decisão via TreeSHAP e monitoramento mensal</li>
+<li><strong>Produto de ponta a ponta:</strong> API FastAPI, dashboard Streamlit com 7 páginas e simuladores, job mensal de monitoramento no GitHub Actions</li>
+<li><strong>Equidade:</strong> o modelo dispensa sexo, estado civil e idade sem perder desempenho; a PD erra no máximo 2,0 p.p. em qualquer grupo</li>
+<li><strong>Reprodutível:</strong> SHA-256 dos dados, lock de dependências, Docker reproduzindo as métricas do holdout com diferença 0,0, 215 testes e CI</li>
+</ul>
+</div>
+<hr />
+<h2 id="arquitetura">Arquitetura</h2>
+<pre class="mermaid"><code>flowchart LR
+    UCI[(UCI&lt;br/&gt;dataset 350)] --&gt;|download +&lt;br/&gt;SHA-256| CLEAN[limpeza]
+    CLEAN --&gt; SPLIT{separação}
+    SPLIT --&gt;|80% treino| CV[features, modelos,&lt;br/&gt;tuning e política&lt;br/&gt;CV 5×3]
+    SPLIT --&gt;|20% lacrado| HOLD[(holdout)]
+    CV --&gt; FINAL[modelo final&lt;br/&gt;XGBoost]
+    HOLD --&gt;|uma única vez| FINAL
+    FINAL --&gt; SCORE[["scoring.py&lt;br/&gt;PD → perda esperada →&lt;br/&gt;score → faixa → ação → motivos"]]
+    SCORE --&gt; API[API FastAPI]
+    SCORE --&gt; APP[Dashboard Streamlit]
+    SCORE --&gt; MON[monitoramento&lt;br/&gt;PSI + indicadores]
+    MON -.-&gt;|todo dia 1º| GHA[GitHub Actions]</code></pre>
+<p>API, dashboard e avaliação passam pelo mesmo <code>scoring.py</code>: cada regra de negócio
+existe em <strong>um só lugar</strong>.</p>
+<hr />
+<h2 id="os-dados">Os Dados</h2>
+<p><em>Default of Credit Card Clients</em> (Yeh &amp; Lien, 2009), do
+<a href="https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients">UCI Machine Learning Repository</a>
+(CC BY 4.0): <strong>30.000 clientes</strong> de um banco de Taiwan (abr–set/2005), com limite,
+perfil e 6 meses de histórico de pagamento, fatura e valor pago. Alvo: calote em
+outubro de 2005 (22,12% positivos).</p>
+<hr />
+<h2 id="stack-utilizada">Stack Utilizada</h2>
+<table>
+<thead>
+<tr>
+<th>Tecnologia</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Python 3.11</td>
+<td>Linguagem principal</td>
+</tr>
+<tr>
+<td>pandas / NumPy</td>
+<td>Manipulação dos dados e feature engineering</td>
+</tr>
+<tr>
+<td>SciPy / statsmodels</td>
+<td>Inferência: IC bootstrap, qui-quadrado, Mann-Whitney, Holm</td>
+</tr>
+<tr>
+<td>scikit-learn</td>
+<td>Pipelines, PCA, K-means, CV, tuning, calibração e ensembles</td>
+</tr>
+<tr>
+<td>XGBoost</td>
+<td>Modelo final</td>
+</tr>
+<tr>
+<td>imbalanced-learn</td>
+<td>Experimento de balanceamento (SMOTE)</td>
+</tr>
+<tr>
+<td>SHAP</td>
+<td>Motivos da decisão por cliente (TreeSHAP)</td>
+</tr>
+<tr>
+<td>FastAPI / pydantic</td>
+<td>API de scoring com contrato estrito</td>
+</tr>
+<tr>
+<td>Streamlit / Plotly</td>
+<td>Dashboard de storytelling e simuladores</td>
+</tr>
+<tr>
+<td>pytest / ruff / pre-commit</td>
+<td>Testes e qualidade de código</td>
+</tr>
+<tr>
+<td>Docker / Compose / GitHub Actions</td>
+<td>Reprodução, deploy local e CI + monitoramento mensal</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="metodologia">Metodologia</h2>
+<ol>
+<li><strong>EDA com inferência:</strong> IC bootstrap, testes com tamanho de efeito e correção de Holm. O atraso recente é o sinal mais forte — com 2 meses de atraso em setembro, <strong>69%</strong> deram calote. A análise também mostrou que o código <code>-2</code> significa "quitou a fatura", não "sem consumo".</li>
+<li><strong>Segmentação (PCA + K-means, sem o alvo):</strong> três perfis — quitadores (16,7% de calote), rotativo em dia (18,8%) e atraso crônico (<strong>62,4%</strong>).</li>
+<li><strong>Duelo de modelos:</strong> regressão logística × Árvore de Decisão × Random Forest × XGBoost com <code>RepeatedStratifiedKFold</code> 5×3 e comparação pareada. Métricas adequadas ao desbalanceamento: PR AUC, ROC AUC, KS e Brier.</li>
+<li><strong>Experimentos com critério fixado antes:</strong> balanceamento, ensembles, calibração e segmento como feature foram testados e rejeitados — sistema final mais simples, XGBoost sozinho.</li>
+<li><strong>Política por custo:</strong> perda esperada por cliente, limiar e cortes das faixas definidos nas previsões out-of-fold do treino, com análise de sensibilidade às premissas (LGD, eficácia da ação, custos).</li>
+<li><strong>Avaliação única no holdout</strong>, perda esperada da carteira, score e faixas, motivos por cliente e auditoria de equidade.</li>
+<li><strong>Monitoramento:</strong> PSI do score e das variáveis + indicadores de negócio, validado com uma crise simulada.</li>
+</ol>
+<p><img alt="Política com capacidade de 10%" src="https://raw.githubusercontent.com/RToyoyama/credit-risk-semantix/main/reports/figures/decision_01_capacidade.png" /></p>
+<hr />
+<h2 id="resultados">Resultados</h2>
+<h3 id="prova-final-holdout-6000-clientes">Prova final (holdout, 6.000 clientes)</h3>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Holdout</th>
+<th>IC 95%</th>
+<th>CV (treino)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PR AUC</td>
+<td><strong>0,560</strong></td>
+<td>0,531 – 0,589</td>
+<td>0,566</td>
+</tr>
+<tr>
+<td>ROC AUC</td>
+<td>0,782</td>
+<td>0,767 – 0,796</td>
+<td>0,788</td>
+</tr>
+<tr>
+<td>KS</td>
+<td>0,427</td>
+<td>0,402 – 0,457</td>
+<td>0,441</td>
+</tr>
+<tr>
+<td>Brier</td>
+<td>0,134</td>
+<td>0,129 – 0,140</td>
+<td>0,133</td>
+</tr>
+</tbody>
+</table>
+<p>Sem modelo, a PR AUC seria 0,22. A perda esperada prevista para a carteira
+(NT$ 39,4 mi) ficou a <strong>2,3%</strong> da perda real (NT$ 40,4 mi).</p>
+<h3 id="faixas-de-risco-holdout">Faixas de risco (holdout)</h3>
+<table>
+<thead>
+<tr>
+<th>Faixa</th>
+<th>Clientes</th>
+<th>Taxa de calote</th>
+<th>Ação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>1.787</td>
+<td>6,3%</td>
+<td>elegível a aumento de limite e ofertas</td>
+</tr>
+<tr>
+<td>B</td>
+<td>1.540</td>
+<td>14,2%</td>
+<td>relacionamento padrão</td>
+</tr>
+<tr>
+<td>C</td>
+<td>1.213</td>
+<td>20,0%</td>
+<td>relacionamento padrão, com monitoramento</td>
+</tr>
+<tr>
+<td>D</td>
+<td>842</td>
+<td>38,0%</td>
+<td>monitoramento próximo</td>
+</tr>
+<tr>
+<td>E</td>
+<td>618</td>
+<td><strong>70,4%</strong></td>
+<td>candidato prioritário a ação preventiva</td>
+</tr>
+</tbody>
+</table>
+<p>Cada decisão vem com os <strong>3 principais motivos</strong> em frases de negócio, por exemplo:
+"2 meses de atraso no último pagamento · atraso em 1 dos últimos 6 meses · usa 98% do limite".</p>
+<h3 id="o-que-nao-funcionou-e-virou-aprendizado">O que não funcionou (e virou aprendizado)</h3>
+<table>
+<thead>
+<tr>
+<th>Experimento</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Escolher pela maior probabilidade de calote</td>
+<td>NT$ 5,01 mi — empata com a regra de atraso; o valor em jogo é o que faz diferença</td>
+</tr>
+<tr>
+<td>Balanceamento, ensemble e calibração</td>
+<td>Rejeitados pelos critérios fixados antes</td>
+</tr>
+<tr>
+<td>PSI como único alarme de drift</td>
+<td>Não percebeu uma crise simulada; PD média e participação da faixa E perceberam</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Dashboard — decisão" src="https://raw.githubusercontent.com/RToyoyama/credit-risk-semantix/main/docs/images/dashboard_04_decisao.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Lições aprendidas</p>
+<ul>
+<li><strong>Uma prova lacrada de verdade dá confiança.</strong> No Titanic, a CV dizia 0,85 e a realidade foi 0,78; aqui a diferença foi 0,006.</li>
+<li><strong>O objetivo é dinheiro, não métrica.</strong> O melhor modelo de risco empatou com uma regra simples até entrar o valor em jogo.</li>
+<li><strong>Fixar o critério antes evita se enganar</strong> — e deixa o sistema mais simples.</li>
+<li><strong>Desconfiar da documentação dos dados:</strong> o código <code>-2</code> não significava o que se costuma supor.</li>
+<li><strong>Olhar o produto pega erros que os testes não pegam:</strong> as capturas do dashboard revelaram um cálculo errado.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Limitações</p>
+<p>Dados de 2005, de um único banco de Taiwan, sem renda nem dados de birô. As premissas
+de negócio (perda de 60% no calote, eficácia da ação de 30%, custos) são referências,
+não medições — a conclusão resiste a elas, mas o valor em dinheiro depende delas.</p>
+</div>
+<hr />
+<h2 id="como-executar">Como Executar</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Docker</label><label for="__tabbed_1_2">Local</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/RToyoyama/credit-risk-semantix.git
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>credit-risk-semantix
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>make<span class="w"> </span>up<span class="w">        </span><span class="c1"># ou: docker compose up -d</span>
+</code></pre></div>
+<p>Na primeira vez, a API baixa os dados da UCI e treina o modelo (~1 minuto).
+API em <code>http://localhost:8000/docs</code> e dashboard em <code>http://localhost:8501</code>.</p>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/RToyoyama/credit-risk-semantix.git
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>credit-risk-semantix
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>make<span class="w"> </span>venv<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>install
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>make<span class="w"> </span>data<span class="w">         </span><span class="c1"># baixa da UCI e confere o SHA-256</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>make<span class="w"> </span>split<span class="w">        </span><span class="c1"># limpeza + holdout</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>make<span class="w"> </span>experiments<span class="w">  </span><span class="c1"># experimentos → reports/</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>make<span class="w"> </span>final<span class="w">        </span><span class="c1"># avaliação única no holdout</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>make<span class="w"> </span>api<span class="w">          </span><span class="c1"># API em :8000</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>make<span class="w"> </span>app<span class="w">          </span><span class="c1"># dashboard em :8501</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>make<span class="w"> </span><span class="nb">test</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="exemplo-chamando-a-api">Exemplo: chamando a API</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8000/score<span class="w"> </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span>-d<span class="w"> </span><span class="s1">'{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="s1">  "id": 101, "limit_bal": 50000, "education": 2,</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="s1">  "pay_status_1": 2, "pay_status_2": 2, "pay_status_3": 0, "pay_status_4": 0, "pay_status_5": 0, "pay_status_6": 0,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="s1">  "bill_amt_1": 48500, "bill_amt_2": 47000, "bill_amt_3": 46200, "bill_amt_4": 30000, "bill_amt_5": 28000, "bill_amt_6": 25000,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="s1">  "pay_amt_1": 0, "pay_amt_2": 1500, "pay_amt_3": 2000, "pay_amt_4": 1500, "pay_amt_5": 1000, "pay_amt_6": 1000</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="s1">}'</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">"pd"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.611</span><span class="p">,</span><span class="w"> </span><span class="nt">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">352</span><span class="p">,</span><span class="w"> </span><span class="nt">"faixa"</span><span class="p">:</span><span class="w"> </span><span class="s2">"E"</span><span class="p">,</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">"acao"</span><span class="p">:</span><span class="w"> </span><span class="s2">"candidato prioritário a ação preventiva"</span><span class="p">,</span><span class="w"> </span><span class="nt">"prioritario"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nt">"perda_esperada"</span><span class="p">:</span><span class="w"> </span><span class="mf">17783.42</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nt">"motivos"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="s2">"2 meses de atraso no último pagamento"</span><span class="p">,</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="s2">"atraso em 2 dos últimos 6 meses (pior atraso: 2 meses)"</span><span class="p">,</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="s2">"comportamento de pagamento: pagou 0% da fatura anterior"</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">}</span>
+</code></pre></div>
+<p>A API <strong>não aceita</strong> sexo, estado civil nem idade — enviar um deles retorna erro 422.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2025 Renan Toyoyama · Engenharia & Ciência de Dados
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/RToyoyama" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/renan-toyoyama-3b0165308/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:renantoyoyama@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0L0 176z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "content.code.copy", "search.highlight", "search.suggest"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+    
+  </body>
+</html>
